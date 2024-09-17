@@ -1,0 +1,6 @@
+@mf_apis_web_services_gestao_de_salao_servicos_HostAddress = http://localhost:5111
+
+GET {{mf_apis_web_services_gestao_de_salao_servicos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
