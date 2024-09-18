@@ -19,13 +19,12 @@ namespace mf_apis_web_services_gestao_de_salao_servicos.Models
         public TimeSpan Duracao { get; set; }
 
         [Required]
-        [DisplayFormat(DataFormatString = "{0:N2}")]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Valor { get; set; }
 
         [Required]
         public int ServicoCategoriaId { get; set; }
         public ServicoCategoria ServicoCategoria { get; set; }
 
-        public ICollection<Agendamento> Agendamentos { get; set; }
     }
 }

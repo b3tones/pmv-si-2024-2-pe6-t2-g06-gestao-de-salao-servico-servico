@@ -15,7 +15,6 @@ namespace mf_apis_web_services_gestao_de_salao_servicos.Models
         public string Nome { get; set; }
 
         public ICollection<ServicoSubCategoria> ServicoSubCategorias { get; set; }
-        public ICollection<Agendamento> Agendamentos { get; set; }
 
     }
 }
