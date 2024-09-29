@@ -4,9 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace mf_apis_web_services_gestao_de_salao_servicos.Models
 {
     [Table("ServicoCategorias")]
-    public class ServicoCategoria
+    public class ServicoCategoria : LinksHATEOS
     {
         [Key]
+        [Required]
         [ScaffoldColumn(false)]
         public int Id { get; set; }
 
@@ -15,6 +16,8 @@ namespace mf_apis_web_services_gestao_de_salao_servicos.Models
         public string Nome { get; set; }
 
         public ICollection<ServicoSubCategoria> ServicoSubCategorias { get; set; }
+
+        public ICollection<ServicoUsuarios> Usuario { get; set; }
 
     }
 }
