@@ -2,12 +2,12 @@
 
 namespace mf_apis_web_services_gestao_de_salao_servicos.Models
 {
-    public class ServicoCategoriaDto
+    public class AuthenticateDto
     {
-        public int? Id { get; set; } 
+        [Required]
+        public int Id { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        public string Nome { get; set; }
+        public string Senha { get; set; }
     }
 }
